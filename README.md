@@ -7,25 +7,20 @@ Question 1:
 Design a program that prints the numbers from 1 to 100. But for multiples of three print "Boats" instead of the number and for the multiples of five print "Group". For numbers which are multiples of both three and five print "BoatsGroup"
 
 #### For example:
+```shell
 100
-
 1
-
 2
-
 Boats
-
 4
-
 Group
 
 [more execution...]
 
 98
-
 Boats
-
 Group
+```
 
 #### Solution:
 If you want to run the Ruby version do the following
@@ -53,25 +48,21 @@ Question 2:
 What state are the doors in after the last pass? Which are open, which are closed?
 
 #### For example:
-9
+```shell
+100
+0 - closed
+1 - open
+2 - open
+3 - closed
+4 - open
+5 - open
 
-closed
+[more execution...]
 
-open
-
-open
-
-closed
-
-open
-
-open
-
-open
-
-open
-
-closed
+97 - open
+98 - open
+99 - closed
+```
 
 #### Solution:
 If you want to run the Ruby version do the following

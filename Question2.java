@@ -36,7 +36,7 @@ public class Question2 {
         q.checkDoors(n);
         String[] arr = q.getArr();
         for(int i=0; i<n; i++){
-          System.out.println(arr[i]);
+          System.out.println(String.format("%s - %s",i,arr[i]));
         }
         in.close();
     }
