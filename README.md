@@ -47,3 +47,8 @@ If you want to run the Ruby version do the following
     ruby question1.rb
 ```
 
+If you want to run the Java Tests do the following
+```shell
+javac -cp junit-4.12.jar:. Question2Test.java
+java -cp .:junit-4.12.jar:hamcrest-core-1.3.rc2.jar org.junit.runner.JUnitCore Question2Test
+```
