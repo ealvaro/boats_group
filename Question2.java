@@ -31,6 +31,7 @@ public class Question2 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Enter number of doors: ");
         int n = in.nextInt();
         Question2 q = new Question2(n);
         q.checkDoors(n);

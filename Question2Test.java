@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 public class Question2Test {
 
   /*
-  This one tests multiples of 3
+  This one tests initially all doors are open 
    */
   @Test
   public void testInitiallyAllDoorsOpen() {
@@ -16,7 +16,7 @@ public class Question2Test {
     }
   }
   /*
-  This one tests multiples of 5
+  This one tests after 1st pass all doors are closed
    */
   @Test
   public void testFirstPassAllDoorsClosed() {
@@ -29,14 +29,25 @@ public class Question2Test {
   }
 
   /*
-  This one tests multiples of 3 and 5
+  This one tests last door will be closed on 9 passes
    */
   @Test
-  public void testLastDoorClosedAfter15Passes() {
+  public void testLastDoorClosedAfter9Passes() {
     Question2 q = new Question2(9);  //Make array of 9 doors
     q.checkDoors(9);
     String[] arr = q.getArr();
-    assertEquals(last(arr), "closed"); //Door is open
+    assertEquals(last(arr), "closed"); //Door is closed
+  }
+
+  /*
+  This one tests last door will be open on 10 passes
+   */
+  @Test
+  public void testLastDoorOpenAfter10Passes() {
+    Question2 q = new Question2(10);  //Make array of 9 doors
+    q.checkDoors(10);
+    String[] arr = q.getArr();
+    assertEquals(last(arr), "open"); //Door is open
   }
 
   private String last(String[] array){

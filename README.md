@@ -8,7 +8,7 @@ Design a program that prints the numbers from 1 to 100. But for multiples of thr
 
 #### For example:
 ```shell
-100
+Enter Max number: 100
 1
 2
 Boats
@@ -49,7 +49,7 @@ What state are the doors in after the last pass? Which are open, which are close
 
 #### For example:
 ```shell
-100
+Enter number of doors: 100
 0 - closed
 1 - open
 2 - open
