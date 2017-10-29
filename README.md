@@ -17,6 +17,18 @@ Group
 Boats
 Group
 
+If you want to run the Java version do the following
+```shell
+javac Question1.java
+java Question1
+```
+
+If you want to run the Java Tests do the following
+```shell
+javac -cp junit-4.12.jar:. Question1Test.java
+java -cp .:junit-4.12.jar:hamcrest-core-1.3.rc2.jar org.junit.runner.JUnitCore Question1Test
+```
+
 
 
 Question 2:
@@ -29,11 +41,6 @@ What state are the doors in after the last pass? Which are open, which are close
 Solution:
 --------
 
-If you want to run the Java version do the following
-```shell
-javac Question1.java
-java Question1
-```
 
 If you want to run the Ruby version do the following
 ```ruby
