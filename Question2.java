@@ -34,7 +34,9 @@ public class Question2 {
         System.out.print("Enter number of doors: ");
         int n = in.nextInt();
         Question2 q = new Question2(n);
-        q.checkDoors(n);
+        System.out.print("How many passes: ");
+        int p = in.nextInt();
+        q.checkDoors(p);
         String[] arr = q.getArr();
         for(int i=0; i<n; i++){
           System.out.println(String.format("%s - %s",i,arr[i]));

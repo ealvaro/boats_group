@@ -6,31 +6,12 @@
 
 #Question: What state are the doors in after the last pass? Which are open, which are closed?
 #
-class Question2
+require './question2'
 
-  attr_reader :arr
-
-  def initialize (n)
-    @arr = Array.new(n,'open')
-  end
-
-  def check_doors (n)
-    for i in (1..n) do
-      for d in (1..@arr.length)
-        if d%i == 0  #visit the door
-          toggle_door(d)
-        end
-      end
-    end
-  end
-
-private
-
-  def toggle_door (d)
-    if @arr[d-1] == 'open'
-      @arr[d-1] = 'closed'
-    else
-      @arr[d-1] = 'open'        
-    end
-  end
-end
+puts "Enter number of doors: "
+n = gets.strip.to_i
+q = Question2.new(n)
+puts "How many passes: "
+p = gets.strip.to_i
+q.check_doors(p)
+puts q.arr

@@ -25,7 +25,11 @@ Group
 #### Solution:
 If you want to run the Ruby version do the following
 ```ruby
-    ruby question1.rb
+    ruby question1_run.rb
+```
+If you want to run the Ruby Tests do the following
+```ruby
+    ruby question1_test.rb
 ```
 If you want to run the Java version do the following
 ```shell
@@ -37,7 +41,6 @@ If you want to run the Java Tests do the following
 javac -cp junit-4.12.jar:. Question1Test.java
 java -cp .:junit-4.12.jar:hamcrest-core-1.3.rc2.jar org.junit.runner.JUnitCore Question1Test
 ```
-
 
 
 Question 2:
@@ -67,7 +70,11 @@ Enter number of doors: 100
 #### Solution:
 If you want to run the Ruby version do the following
 ```ruby
-    ruby question2.rb
+    ruby question2_run.rb
+```
+If you want to run the Ruby Tests do the following
+```ruby
+    ruby question2_test.rb
 ```
 If you want to run the Java version do the following
 ```shell

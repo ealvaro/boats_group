@@ -35,7 +35,7 @@ public class Question1Test {
    */
   @Test
   public void testMultiplesOfThreeAndFive() {
-    assertEquals(arr[14], "BoatsGroup"); //Multiples of 5
+    assertEquals(arr[14], "BoatsGroup"); //Multiples of 3 and 5
   }
 
 }
