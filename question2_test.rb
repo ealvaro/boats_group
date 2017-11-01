@@ -4,7 +4,7 @@ require './question2'
 class TestQuestion2 < Minitest::Test
 
   def setup
-    @q = Question2.new(9)            #Make array of 9 doors
+    @q = Question2.new(9)                          #Make array of 9 doors
   end
 
   def test_initially_all_doors_open
@@ -19,13 +19,13 @@ class TestQuestion2 < Minitest::Test
 
   def test_last_door_closed_after_9_passes
     @q.check_doors(9)
-    assert_equal @q.arr.last, "closed"  #Last door is closed
+    assert_equal @q.arr.last, "closed"             #Last door is closed
   end
 
   def test_last_door_open_after_10_passes
-    @q = Question2.new(10)            #Overwrite array of 10 doors
+    @q = Question2.new(10)                         #Overwrite array of 10 doors
     @q.check_doors(10)
-    assert_equal @q.arr.last, "open"  #Last door is open now
+    assert_equal @q.arr.last, "open"               #Last door is open now
   end
 
 end

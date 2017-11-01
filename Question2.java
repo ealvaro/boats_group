@@ -38,8 +38,8 @@ public class Question2 {
         int p = in.nextInt();
         q.checkDoors(p);
         String[] arr = q.getArr();
-        for(int i=0; i<n; i++){
-          System.out.println(String.format("%s - %s",i,arr[i]));
+        for(int i=1; i<=n; i++){
+          System.out.println(String.format("%s - %s",i,arr[i-1]));
         }
         in.close();
     }

@@ -14,4 +14,4 @@ q = Question2.new(n)
 puts "How many passes: "
 p = gets.strip.to_i
 q.check_doors(p)
-puts q.arr
+q.arr.each_with_index {|val,index| puts "#{index+1} - #{val}"}
