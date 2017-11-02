@@ -23,20 +23,22 @@ Group
 ```
 
 #### Solution:
-If you want to run the Ruby version do the following
+##### In Ruby
+to run it
 ```ruby
     ruby question1_run.rb
 ```
-If you want to run the Ruby Tests do the following
+to test it
 ```ruby
     ruby question1_test.rb
 ```
-If you want to run the Java version do the following
+##### In Java
+to run it
 ```shell
 javac Question1.java
 java Question1
 ```
-If you want to run the Java Tests do the following
+to test it
 ```shell
 javac -cp junit-4.12.jar:. Question1Test.java
 java -cp .:junit-4.12.jar:hamcrest-core-1.3.rc2.jar org.junit.runner.JUnitCore Question1Test
@@ -53,35 +55,37 @@ What state are the doors in after the last pass? Which are open, which are close
 #### For example:
 ```shell
 Enter number of doors: 100
-0 - closed
-1 - open
+1 - closed
 2 - open
-3 - closed
-4 - open
+3 - open
+4 - closed
 5 - open
+6 - open
 
 [more execution...]
 
-97 - open
 98 - open
-99 - closed
+99 - open
+100 - closed
 ```
 
 #### Solution:
-If you want to run the Ruby version do the following
+##### In Ruby
+to run it
 ```ruby
     ruby question2_run.rb
 ```
-If you want to run the Ruby Tests do the following
+to test it
 ```ruby
     ruby question2_test.rb
 ```
-If you want to run the Java version do the following
+##### In Java
+to run it
 ```shell
 javac Question2.java
 java Question2
 ```
-If you want to run the Java Tests do the following
+to test it
 ```shell
 javac -cp junit-4.12.jar:. Question2Test.java
 java -cp .:junit-4.12.jar:hamcrest-core-1.3.rc2.jar org.junit.runner.JUnitCore Question2Test
