@@ -12,7 +12,7 @@ public class Question2 {
 
   Question2(int n){
     arr = new String[n];
-    Arrays.fill(arr, "open");
+    Arrays.fill(arr, "closed");
   }
 
   public void checkDoors (int times){

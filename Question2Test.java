@@ -15,11 +15,11 @@ public class Question2Test {
   This one tests initially all doors are open 
    */
   @Test
-  public void testInitiallyAllDoorsOpen() {
+  public void testInitiallyAllDoorsClosed() {
     q.checkDoors(0);
     String[] arr = q.getArr();
-    for(int i=0; i<arr.length; i++){  //All doors are open
-      assertEquals(arr[i], "open"); 
+    for(int i=0; i<arr.length; i++){  //All doors are closed
+      assertEquals(arr[i], "closed"); 
     }
   }
   /*
@@ -29,8 +29,8 @@ public class Question2Test {
   public void testFirstPassAllDoorsClosed() {
     q.checkDoors(1);
     String[] arr = q.getArr();
-    for(int i=0; i<arr.length; i++){  //All doors are closed
-      assertEquals(arr[i], "closed"); 
+    for(int i=0; i<arr.length; i++){  //All doors are open
+      assertEquals(arr[i], "open"); 
     }
   }
 
@@ -41,7 +41,7 @@ public class Question2Test {
   public void testLastDoorClosedAfter9Passes() {
     q.checkDoors(9);
     String[] arr = q.getArr();
-    assertEquals(last(arr), "closed"); //Last door is closed
+    assertEquals(last(arr), "open"); //Last door is closed
   }
 
   /*
@@ -52,7 +52,7 @@ public class Question2Test {
     q = new Question2(10);  //Overwrite array of 10 doors
     q.checkDoors(10);
     String[] arr = q.getArr();
-    assertEquals(last(arr), "open"); //Door is open
+    assertEquals(last(arr), "closed"); //Door is open
   }
 
   private String last(String[] array){
